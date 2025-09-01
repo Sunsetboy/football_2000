@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Футбол 2000 — Браузерная версия</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Футбол 2000 (JS)</h1>
+      <div id="status"></div>
+    </header>
+
+    <nav id="menu" class="menu"></nav>
+
+    <main id="content" class="content"></main>
+
+    <section class="scoreboard" id="scoreboard" hidden>
+      <div>
+        <span id="team1Name">Команда 1</span>
+        <strong id="score1">0</strong>
+        <span>:</span>
+        <strong id="score2">0</strong>
+        <span id="team2Name">Команда 2</span>
+      </div>
+      <div class="meta">
+        <span>Минута: <strong id="minute">0</strong>'</span>
+        <span>Тур: <strong id="tour">0</strong></span>
+        <span>Погода: <strong id="weather">—</strong></span>
+        <span>Место: <strong id="place">—</strong></span>
+      </div>
+    </section>
+
+    <section class="field" id="field" hidden>
+      <div class="goal left">Ворота</div>
+      <div class="pitch">
+        <div class="center-circle"></div>
+        <div class="ball" id="ball">⚽</div>
+      </div>
+      <div class="goal right">Ворота</div>
+    </section>
+
+    <section class="log" id="log" aria-live="polite"></section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
